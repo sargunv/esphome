@@ -8,16 +8,12 @@ esp8266:
 logger:
 
 ota:
+  platform: esphome
   password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
-
-  manual_ip:
-    static_ip: !secret wifi_manual_ip_static_ip_1
-    gateway: !secret wifi_manual_ip_gateway
-    subnet: !secret wifi_manual_ip_subnet
 
   fast_connect: True
 
